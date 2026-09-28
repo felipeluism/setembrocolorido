@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oficinas de Culminância do Projeto</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: #f5f7f5;
+            color: #333;
+        }
+
+        header {
+            background: #006b3f;
+            color: white;
+            text-align: center;
+            padding: 45px 20px 40px;
+            border-bottom: 6px solid #f2c300;
+        }
+
+        header h1 {
+            font-size: 30px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+
+        header p {
+            font-size: 17px;
+            opacity: 0.95;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .aviso {
+            background: white;
+            border-left: 6px solid #f2c300;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+        }
+
+        .aviso h2 {
+            color: #006b3f;
+            margin-bottom: 12px;
+            font-size: 22px;
+        }
+
+        .aviso p {
+            line-height: 1.6;
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        .oficinas {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 22px;
+        }
+
+        .oficina {
+            background: white;
+            border-radius: 10px;
+            padding: 28px 22px;
+            text-align: center;
+            border-top: 5px solid #006b3f;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+            transition: 0.25s;
+        }
+
+        .oficina:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 7px 18px rgba(0,0,0,0.12);
+        }
+
+        .icone {
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+
+        .oficina h3 {
+            color: #006b3f;
+            font-size: 18px;
+            min-height: 55px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .botao {
+            display: inline-block;
+            background: #006b3f;
+            color: white;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+
+        .botao:hover {
+            background: #004d2d;
+        }
+
+        footer {
+            margin-top: 50px;
+            background: #006b3f;
+            color: white;
+            text-align: center;
+            padding: 22px;
+            border-top: 5px solid #f2c300;
+        }
+
+        footer p {
+            font-size: 14px;
+            margin: 4px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 23px;
+            }
+
+            header p {
+                font-size: 15px;
+            }
+
+            .container {
+                margin-top: 25px;
+            }
+
+            .oficina {
+                padding: 24px 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Oficinas de Culminância do Projeto</h1>
+        <p>Escolha uma oficina e realize sua inscrição</p>
+    </header>
+
+    <main class="container">
+
+        <section class="aviso">
+            <h2>Inscrições para as Oficinas</h2>
+
+            <p>
+                Durante a culminância do projeto, serão realizadas diferentes
+                oficinas para os alunos.
+            </p>
+
+            <p>
+                <strong>
+                    Escolha uma das opções abaixo e clique em
+                    "Fazer inscrição" para preencher o formulário.
+                </strong>
+            </p>
+        </section>
+
+        <section class="oficinas">
+
+            <div class="oficina">
+                <div class="icone">💃</div>
+                <h3>OFICINA - RITMOS MARANHENSES</h3>
+                <a class="botao"
+                   href="https://forms.gle/qhKBYJcHuRNXdESM6"
+                   target="_blank">
+                    Fazer inscrição
+                </a>
+            </div>
+
+            <div class="oficina">
+                <div class="icone">🎤</div>
+                <h3>OFICINA DE RIMA</h3>
+                <a class="botao"
+                   href="https://forms.gle/JT6vNZ1zwVLmK39u5"
+                   target="_blank">
+                    Fazer inscrição
+                </a>
+            </div>
+
+            <div class="oficina">
+                <div class="icone">📱</div>
+                <h3>OFICINA DE MOBGRAFIA</h3>
+                <a class="botao"
+                   href="https://forms.gle/Lkiq7q8ggmFqTvhZ7"
+                   target="_blank">
+                    Fazer inscrição
+                </a>
+            </div>
+
+            <div class="oficina">
+                <div class="icone">💇</div>
+                <h3>OFICINA DE TRANÇAS</h3>
+                <a class="botao"
+                   href="https://forms.gle/rvNCdmS47Dqs5Y387"
+                   target="_blank">
+                    Fazer inscrição
+                </a>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p><strong>Oficinas de Culminância do Projeto</strong></p>
+        <p>Instituto Estadual de Educação, Ciência e Tecnologia</p>
+    </footer>
+
+</body>
+</html>
